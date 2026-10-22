@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#07040d">
+  <title>LuTekOps · Code. Build. Operate.</title>
+  <meta name="description" content="LuTekOps – Indie-Tech-Lab aus der Schweiz. Apps, Backends und Ops aus einer Hand. Entwickler von Picker – Smart Decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LuTekOps">
+  <meta property="og:title" content="LuTekOps · Code. Build. Operate.">
+  <meta property="og:description" content="Indie-Tech-Lab aus der Schweiz. Entwickler von Picker – Smart Decisions.">
+  <meta property="og:image" content="https://lutekops.ch/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="mini-brand" href="#top" aria-label="LuTekOps – nach oben"><img src="assets/img/logo-round.webp" alt="" width="36" height="36"> <span>LuTekOps</span></a>
+  <nav>
+    <a href="#about">about</a>
+    <a href="#security">security</a>
+    <a href="#picker">picker</a>
+    <a href="#stack">stack</a>
+    <a href="#kontakt">kontakt</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-logo">
+      <img src="assets/img/logo-wide.webp" srcset="assets/img/logo-wide-760.webp 760w, assets/img/logo-wide.webp 1376w" sizes="(max-width: 780px) 100vw, 780px" alt="LuTekOps Logo" width="1376" height="768" fetchpriority="high">
+    </div>
+    <h1 class="sr-only">LuTekOps</h1>
+    <div class="term" role="img" aria-label="Terminal: whoami – LuTekOps, Indie-Tech-Lab aus der Schweiz. Code. Build. Operate.">
+      <div class="term-bar"><span>~/lutekops — zsh</span><b class="wc"><button type="button" data-msg="nur Klick Klick, sonst nix" aria-label="Minimieren">—</button><button type="button" data-msg="nur Klick Klick, sonst nix" aria-label="Maximieren">☐</button><button type="button" data-msg="nur Klick Klick, sonst nix" aria-label="Schliessen">✕</button></b></div>
+      <pre class="term-body"><span class="p">$</span> whoami
+<span class="o" data-type="LuTekOps – Indie-Tech-Lab aus der Schweiz 🇨🇭">LuTekOps – Indie-Tech-Lab aus der Schweiz 🇨🇭</span>
+<span class="p">$</span> echo $MOTTO
+<span class="o accent" data-type="Code. Build. Operate.">Code. Build. Operate.</span><span class="cursor"></span></pre>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#picker">Projekt ansehen</a>
+      <a class="btn ghost" href="#kontakt">Kontakt</a>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Weiter nach unten"><span></span></a>
+  </section>
+
+  <section id="about" class="block reveal">
+    <p class="kicker">// about</p>
+    <h2>Von der Idee bis in den Store.<br><span class="glow">Alles aus einer Hand.</span></h2>
+    <div class="about-grid">
+      <div class="prose">
+        <p>LuTekOps ist ein kleines, unabhängiges Tech-Lab aus der Schweiz. Hier entstehen Apps, die man wirklich benutzt: entworfen, gebaut, betrieben und abgesichert ohne Agentur, ohne Overhead und ohne Buzzword-Bingo.</p>
+        <p>Der Name ist Programm: <strong>Lu</strong> für den Menschen dahinter, <strong>Tek</strong> für die Technik, <strong>Ops</strong> für alles, was danach kommt. Denn eine App ist erst fertig, wenn sie stabil läuft, Updates sauber ausrollen und die Daten sicher sind.</p>
+        <p>Arbeitsweise: kleine Schritte, saubere Reviews, automatisierte Builds und Datenschutz von Anfang an mitgedacht. Und genug Kaffee, ok, seien wir ehrlich: Unmengen an Kaffee.</p>
+      </div>
+      <div class="card code-card">
+        <div class="term-bar"><span>profile.yml</span><b class="wc"><button type="button" data-msg="Komm schon! 😂" aria-label="Minimieren">—</button><button type="button" data-msg="Komm schon! 😂" aria-label="Maximieren">☐</button><button type="button" data-msg="Komm schon! 😂" aria-label="Schliessen">✕</button></b></div>
+<pre><span class="k">name:</span>     <span class="s">LuTekOps</span>
+<span class="k">sitz:</span>     <span class="s">Schweiz</span>
+<span class="k">rolle:</span>    <span class="s">dev + ops + security</span>
+<span class="k">pipeline:</span> <span class="s">[idee, code, review, ship, run]</span>
+<span class="k">tracker:</span>  <span class="n">0</span>   <span class="c"># auf dieser Seite</span>
+<span class="k">kaffee:</span>   <span class="n">.inf</span>
+<span class="k">status:</span>   <span class="ok">● online</span></pre>
+      </div>
+    </div>
+    <ul class="values">
+      <li><b>Fair finanziert</b><span>Werbung hält unsere Apps gratis. Personalisiert nur mit deiner Einwilligung, Daten nur so viel wie nötig. Wir arbeiten mit Google AdMob und würden niemals Daten direkt weiterverkaufen.</span></li>
+      <li><b>Security first</b><span>Sicherheit kommt vor neuen Features. Was das konkret heisst, steht gleich unten.</span></li>
+      <li><b>Ship small, ship often</b><span>Kleine Releases, nachvollziehbare Änderungen, kein Big Bang.</span></li>
+    </ul>
+  </section>
+
+  <section id="security" class="block reveal">
+    <p class="kicker">// security_first</p>
+    <h2>Sicherheit ist eingebaut.<br><span class="glow">Von der Datenbank bis zum Release.</span></h2>
+    <p class="sec-intro">Was in Picker heute schon läuft:</p>
+    <ul class="sec-grid">
+      <li><code>[✓] rls</code><b>Row-Level-Security überall</b><span>Jede Tabelle ist abgeschottet. Du siehst nur, was für dich bestimmt ist, auch wenn jemand direkt an der API rüttelt.</span></li>
+      <li><code>[✓] least_privilege</code><b>Minimale Rechte</b><span>Gäste haben keinen Tabellenzugriff, jede Rolle bekommt nur genau die Rechte, die sie braucht. Heikle Aktionen laufen über geprüfte Server-Funktionen.</span></li>
+      <li><code>[✓] auth</code><b>Starke Anmeldung</b><span>Passwörter werden mit bekannten Datenlecks abgeglichen. Ein Passwortwechsel klappt nur mit dem aktuellen Passwort.</span></li>
+      <li><code>[✓] bot_shield</code><b>Bot-Schutz</b><span><strong class="hl">Cloudflare Turnstile</strong> hält Skripte und Fake-Konten draussen, ganz ohne Bilderrätsel.</span></li>
+      <li><code>[✓] secrets</code><b>Secrets bleiben Secrets</b><span>Geheime Schlüssel liegen nur auf dem Server, nie im App-Code und nie im Repository.</span></li>
+      <li><code>[✓] signed</code><b>Signierte Releases</b><span>Jedes Update ist kryptografisch signiert, App-Links sind per Digital Asset Links verifiziert.</span></li>
+      <li><code>[✓] web</code><b>Gehärtete Websites</b><span>Nur HTTPS, strikte Content-Security-Policy, keine Skripte von Drittservern.</span></li>
+      <li><code>[✓] retention</code><b>Daten mit Ablaufdatum</b><span>Automatische Löschfristen: Protokolle und Altdaten verschwinden von selbst, statt ewig herumzuliegen.</span></li>
+    </ul>
+    <p class="sec-foot">Und vor jedem Release: Code-Review, Security-Advisor, Rechte-Check. Lücke gefunden? <a href="mailto:kontakt@lutekops.ch">kontakt@lutekops.ch</a></p>
+  </section>
+
+  <section id="picker" class="block reveal">
+    <p class="kicker">// projekt_01</p>
+    <div class="project">
+      <div class="project-text">
+        <div class="app-head">
+          <img src="assets/img/picker-icon.svg" alt="" width="64" height="64">
+          <div>
+            <h2>Picker – Smart Decisions</h2>
+            <p class="by">developed by <span class="glow">LuTekOps</span></p>
+          </div>
+        </div>
+        <p class="lead">Viele Optionen. Ein Pick.</p>
+        <p>Pizza oder Sushi? Strand oder Berge? Picker macht aus endlosen Gruppenchats eine klare Antwort: Frage stellen, Optionen rein, deine Leute stimmen ab, fertig. Mit Text oder Bildern, privat für Freunde oder öffentlich im <em>Pick Tank</em>.</p>
+        <ul class="features">
+          <li>Umfrage in Sekunden erstellt</li>
+          <li>Abstimmen auch ohne App, direkt im Browser</li>
+          <li>Push, wenn deine Leute entschieden haben</li>
+          <li>Unentschieden? Der Server wirft eine Münze</li>
+          <li>In 6 Sprachen</li>
+        </ul>
+        <p class="status"><span class="dot"></span> Geschlossener Test läuft · bald im Google Play Store</p>
+        <div class="cta left">
+          <a class="btn primary" href="https://picker.lutekops.ch/">picker.lutekops.ch ↗</a>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="phone-frame">
+          <video id="clip" src="assets/video/picker-tiktok-de.mp4" poster="assets/video/picker-tiktok-de-poster.webp" muted loop playsinline preload="metadata" aria-label="Picker Promo-Video"></video>
+          <button class="sound" type="button" aria-pressed="false" data-off="🔇 Ton an" data-on="🔊 Ton aus">🔇 Ton an</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="block reveal">
+    <p class="kicker">// stack</p>
+    <h2>Werkzeugkasten</h2>
+    <div class="stack">
+      <div class="card"><h3>📱 App</h3><p>Kotlin · Jetpack Compose · Material 3 · Android</p></div>
+      <div class="card"><h3>🗄️ Backend</h3><p>Supabase · PostgreSQL · Row-Level-Security · Edge Functions (TypeScript) · Resend-Mails</p></div>
+      <div class="card"><h3>⚙️ Ops</h3><p>Git-Workflows · GitHub Pages · Migrations as Code · signierte Releases</p></div>
+      <div class="card"><h3>🔐 Security</h3><p>CSP · Least Privilege · Secret Management · HTTPS only</p></div>
+      <div class="card"><h3>🔥 Firebase</h3><p>Cloud Messaging · Push-Benachrichtigungen in Echtzeit</p></div>
+      <div class="card"><h3>🛡️ Cloudflare Turnstile</h3><p>Bot-Schutz ohne Bilderrätsel · für Web-Abstimmung und Anmeldungen</p></div>
+      <div class="card"><h3>📢 Google AdMob</h3><p>Banner &amp; native Anzeigen · Einwilligung via Google UMP (TCF)</p></div>
+      <div class="card"><h3>🤖 Agentic Engineering</h3><p>KI-gestützte Entwicklung: Reviews, Tests, Automatisierung</p></div>
+    </div>
+    <div class="next">
+      <h2><span class="glow">...weitere Projekte folgen</span><span class="cursor"></span></h2>
+    </div>
+  </section>
+
+  <section id="kontakt" class="block reveal contact">
+    <p class="kicker">// kontakt</p>
+    <h2>Idee? Feedback? Bug gefunden?</h2>
+    <p>Schreib eine Mail. Antwort kommt von einem Menschen, nicht von einem Ticketsystem.</p>
+    <a class="mail" href="mailto:kontakt@lutekops.ch"><span class="p">&gt;</span> kontakt@lutekops.ch</a>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/img/logo-round.webp" alt="" width="56" height="56" loading="lazy">
+  <p>© 2026 LuTekOps · Made in Switzerland · <a href="impressum/">Impressum &amp; Datenschutz</a></p>
+  <p class="tiny">Keine Cookies. Keine Tracker. Nur HTML, CSS und ein bisschen JavaScript. <span class="egg">↑↑↓↓←→←→BA</span></p>
+</footer>
+</body>
+</html>
