@@ -140,6 +140,8 @@ h3 { font: 700 18px var(--head); margin: 0 0 6px; }
 
 /* project */
 .project { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
+.project.align-top { align-items: start; }
+.project.align-top .boom-title { padding-top: 10px; }
 .app-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
 .app-head img { border-radius: 16px; box-shadow: 0 0 30px -6px rgba(16,185,129,.55), 0 0 30px -6px rgba(244,63,94,.45); }
 .app-head h2 { margin: 0; font-size: clamp(24px, 4vw, 36px); }
@@ -224,6 +226,7 @@ footer p { margin: 4px 0; }
   .about-grid, .project { grid-template-columns: 1fr; }
   .values, .stack { grid-template-columns: 1fr; }
   .phone { order: -1; }
+  .project.align-top .phone { order: 0; }
   .phone-frame { transform: none; }
   .block { padding: 64px 0; }
 }
