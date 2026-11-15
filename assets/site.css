@@ -196,6 +196,7 @@ h3 { font: 700 18px var(--head); margin: 0 0 6px; }
 .stack .card { padding: 22px; transition: transform .25s, border-color .25s, box-shadow .25s; }
 .stack .card:hover { transform: translateY(-4px); border-color: rgba(181,108,255,.6); box-shadow: 0 10px 40px -14px rgba(181,108,255,.7); }
 .stack p { margin: 0; color: var(--muted); font-size: 15px; }
+.stack .card.wide { grid-column: 1 / -1; }
 
 /* contact */
 .contact { text-align: center; }
